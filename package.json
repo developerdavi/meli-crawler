@@ -6,5 +6,10 @@
   "repository": "https://github.com/developerdavi/meli-crawler.git",
   "author": "Davi Rodrigues",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "next": "^9.2.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
 }
