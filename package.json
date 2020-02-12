@@ -1,0 +1,10 @@
+{
+  "name": "meli-crawler",
+  "version": "1.0.0",
+  "description": "MercadoLivre products crawler",
+  "main": "index.js",
+  "repository": "https://github.com/developerdavi/meli-crawler.git",
+  "author": "Davi Rodrigues",
+  "license": "MIT",
+  "private": false
+}
