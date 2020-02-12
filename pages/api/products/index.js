@@ -1,17 +1,27 @@
 const mercadoLibre = require('mercadolibre')
 
-// const { MELI_ID, MELI_SECRET, MELI_TOKEN }
+const { MELI_APP, MELI_SECRET } = process.env
 
-export default function Products(request, response) {
-  const { query } = request
+export default async function Products(request, response) {
+  const { body } = request
 
   // CACHING
   response.setHeader('Cache-Control', 'max-age=0, s-maxage=86400')
 
-  // const meli = new mercadoLibre.Meli(MELI_ID, MELI_SECRET)
+  try {
+    const meli = new mercadoLibre.Meli(MELI_APP, MELI_SECRET)
+  
+    meli.get(`/sites/MLB/search?q=${body.search}`, null, (err, res) => {
+      
+      // SEND PRODUCTS RESPONSE
+      response.json(res.results)
+    })
 
-  // meli.get('/')
+  } catch (error) {
 
-  // SEND PRODUCTS RESPONSE
-  response.json(query)
+    response.status(500)
+    response.json(error)
+  }
+
+
 }
