@@ -6,7 +6,7 @@ export default async function Products(request, response) {
   const { body } = request
 
   // CACHING
-  response.setHeader('Cache-Control', 'max-age=3600, s-maxage=86400')
+  response.setHeader('Cache-Control', 's-maxage=1, stale-while-revalidate')
 
   try {
     const meli = new mercadoLibre.Meli(MELI_APP, MELI_SECRET)
