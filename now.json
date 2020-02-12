@@ -1,0 +1,12 @@
+{
+  "name": "meli-crawler",
+  "alias": ["meli-crawler.devdavi.com.br"],
+  "scope": "devdavi",
+  "version": 2,
+  "build": {
+    "env": {
+      "MELI_APP": "@meli_app",
+      "MELI_SECRET": "@meli_secret"
+    }
+  }
+}
