@@ -23,6 +23,9 @@ POST `/api/products`
 }
 ```
 
+*Ps.: Fetching products data from the same route using GET method returns cached results from crawler with improved perfomance (from 1s to 40ms).*
+**Sellers' data is always cached to improve reusable and *almost immutable* data usage.**
+
 #### Response
 
 ```json
