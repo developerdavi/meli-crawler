@@ -15,6 +15,8 @@ Get Insomnia workspace [here](https://raw.githubusercontent.com/developerdavi/me
 
 #### Request
 
+BASE URL: `https://meli-crawler.devdavi.com.br`
+
 POST `/api/products` 
 ```json
 {
