@@ -35,6 +35,7 @@ export default async function Products(request, response) {
           const seller_name = seller.data ? seller.data.nickname : null
           
           const product = {
+            id: raw_product.id,
             name: raw_product.title,
             link: raw_product.permalink,
             price: raw_product.price,
