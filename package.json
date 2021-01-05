@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "mercadolibre": "^0.0.13",
     "next": "^9.3.2",
     "react": "^16.12.0",
